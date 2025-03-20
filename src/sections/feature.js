@@ -12,10 +12,10 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Підготовка резюме',
+    title: 'Підготовка резюме',
     text:
-      'Let’s just get this out of the way - there will always be a kit version of Edu flow. Paid subscriptions allow us to continue helping learners around the world.',
+      'Оновлення резюме відповідно до вимог ринку та ATS-систем',
   },
   {
     id: 2,

@@ -12,27 +12,27 @@ const packages = {
   monthly: [
     {
       id: 1,
-      name: 'Free Plan',
+      name: 'CV + консультація + стратегія пошуку роботи',
       description: 'For Small teams or office',
-      buttonText: 'Start free trail',
-      priceWithUnit: '$0',
+      buttonText: 'Замовити',
+      priceWithUnit: '$100',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          text: 'Кар\'єрна консультація. Формування мети пошуку та адаптація досвіду під неї',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "Оновлення резюме відповідно до вимог ринку та ATS-систем",
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Бонус: привітальне повідомлення для відгуку на вакансію + стратегія пошуку роботи.',
           isAvailable: true,
         },
         {
@@ -45,28 +45,28 @@ const packages = {
     },
     {
       id: 2,
-      name: 'Business king',
+      name: 'CV + LinkedIn + 2 консульатції',
       description: 'For Enterprise business',
-      priceWithUnit: '$15',
-      buttonText: 'Create account',
+      priceWithUnit: '$120',
+      buttonText: 'Замовити',
       anotherOption: 'Or Start 14 Days trail',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          text: 'Консультація, визначення мети профілю',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "Повне оформлення профілю (шапка, заголовок, саммарі, досвід, навички, ключові слова)",
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: 'Бонус: рекомендації з подальшого розвитку профілю для підвищення видимості в мережі.',
           isAvailable: true,
         },
         {
@@ -81,34 +81,34 @@ const packages = {
       id: 3,
       header: 'Suggested',
       headerIcon: <IoIosCheckmarkCircle />,
-      name: 'Pro Master',
+      name: 'Супровід до оферу',
       description: 'For pro level developers',
-      priceWithUnit: '$24',
-      buttonText: 'Create account',
+      priceWithUnit: '$1000',
+      buttonText: 'Замовити',
       anotherOption: 'Or Start 14 Days trail',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Drag & Drop Builder',
+          text: 'Оновлення резюме та адаптація під ATS',
           isAvailable: true,
         },
         {
           id: 2,
           icon: <IoIosCheckmarkCircle />,
-          text: "1,000's of Templates",
+          text: "Повний редизайн LinkedIn-профілю для підвищення видимості",
           isAvailable: true,
         },
         {
           id: 3,
           icon: <IoIosCheckmarkCircle />,
-          text: 'Blog Support Tools',
+          text: '4 консультації (формування стратегії, підготовка до співбесід, нетворкінг)',
           isAvailable: true,
         },
         {
           id: 4,
           icon: <IoIosCheckmarkCircle />,
-          text: 'eCommerce Store ',
+          text: 'Щотижневий підбір вакансій під ваш досвід',
           isAvailable: true,
         },
       ],
@@ -117,10 +117,10 @@ const packages = {
   annual: [
     {
       id: 1,
-      name: 'Free Plan',
-      description: 'For Small teams or office',
+      name: 'CV + консультація + стратегія пошуку роботи',
+      description: 'фівфів',
       buttonText: 'Start free trail',
-      priceWithUnit: '$0',
+      priceWithUnit: '$100',
       points: [
         {
           id: 1,
@@ -153,7 +153,7 @@ const packages = {
       name: 'Business king',
       description: 'For Enterprise business',
       priceWithUnit: '$25',
-      buttonText: 'Create account',
+      buttonText: 'Замовити',
       anotherOption: 'Or Start 10 Days trail',
       points: [
         {
@@ -189,7 +189,7 @@ const packages = {
       name: 'Pro Master',
       description: 'For pro level developers',
       priceWithUnit: '$39',
-      buttonText: 'Create account',
+      buttonText: 'Замовити',
       anotherOption: 'Or Start 10 Days trail',
       points: [
         {
@@ -292,26 +292,6 @@ export default function Package() {
           slogan="Pricing Plan"
           title="Choose your pricing policy"
         />
-        <Flex sx={styles.buttonGroup}>
-          <Box sx={styles.buttonGroupInner}>
-            <button
-              className={state.active === 'monthly' ? 'active' : ''}
-              type="button"
-              aria-label="Monthly"
-              onClick={() => handlePricingPlan('monthly')}
-            >
-              Monthly Plan
-            </button>
-            <button
-              className={state.active === 'annual' ? 'active' : ''}
-              type="button"
-              aria-label="Annual"
-              onClick={() => handlePricingPlan('annual')}
-            >
-              Annual Plan
-            </button>
-          </Box>
-        </Flex>
         <Box sx={styles.pricingWrapper} className="pricing__wrapper">
           <Carousel {...sliderParams}>
             {state.pricingPlan.map((packageData) => (

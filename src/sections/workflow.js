@@ -10,27 +10,27 @@ import ArrowEven from 'assets/arrowEven.svg';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'Оновлення резюме та адаптація під ATS',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Оптимізація резюме під автоматизовані системи відбору (ATS), щоб підвищити ваші шанси на успіх.',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'Редизайн LinkedIn-профілю',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Повний редизайн вашого LinkedIn-профілю для підвищення видимості серед рекрутерів і роботодавців.',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Консультації та підготовка до співбесід',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Чотири консультації, включаючи формування кар’єрної стратегії, підготовку до співбесід та нетворкінг.',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Підбір вакансій та підтримка',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Щотижневий підбір вакансій відповідно до вашого досвіду, підготовка до співбесід та психологічна підтримка.',
   },
 ];
 

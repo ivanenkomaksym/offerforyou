@@ -12,34 +12,34 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'Оновлення резюме',
+    title: 'Оновлення резюме',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Оновлення резюме відповідно до вимог ринку та ATS-систем',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Кар\'єрна консультація',
+    title: 'Кар\'єрна консультація',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Формування мети пошуку та адаптація досвіду під неї',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'LinkedIn',
+    title: 'LinkedIn',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Повне оформлення профілю (шапка, заголовок, саммарі, досвід, навички, ключові слова)',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Кар’єрний план',
+    title: 'Кар’єрний план',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Перелік курсів, книжок та ресурсів для навчання',
   },
 ];
 
