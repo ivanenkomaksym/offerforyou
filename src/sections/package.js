@@ -13,9 +13,9 @@ const packages = {
     {
       id: 1,
       name: 'CV + консультація + стратегія пошуку роботи',
-      description: 'For Small teams or office',
+      description: 'Для тих, хто хоче збільшити кількість відгуків та отримати більше оферів',
       buttonText: 'Замовити',
-      priceWithUnit: '$100',
+      priceWithUnit: '$130',
       points: [
         {
           id: 1,
@@ -46,10 +46,9 @@ const packages = {
     {
       id: 2,
       name: 'CV + LinkedIn + 2 консульатції',
-      description: 'For Enterprise business',
-      priceWithUnit: '$120',
+      description: 'Для тих, хто хоче отримувати пропозиції від рекрутерів без активного пошуку',
+      priceWithUnit: '$200',
       buttonText: 'Замовити',
-      anotherOption: 'Or Start 14 Days trail',
       points: [
         {
           id: 1,
@@ -79,13 +78,12 @@ const packages = {
     },
     {
       id: 3,
-      header: 'Suggested',
+      header: 'Топ пропозиція',
       headerIcon: <IoIosCheckmarkCircle />,
       name: 'Супровід до оферу',
-      description: 'For pro level developers',
-      priceWithUnit: '$1000',
+      description: 'Для тих, хто хоче комплексний підхід та підтримку на кожному етапі пошуку роботи.',
+      priceWithUnit: '$1200',
       buttonText: 'Замовити',
-      anotherOption: 'Or Start 14 Days trail',
       points: [
         {
           id: 1,
@@ -289,8 +287,8 @@ export default function Package() {
     <section id="pricing" sx={{ variant: 'section.pricing' }}>
       <Container>
         <SectionHeader
-          slogan="Pricing Plan"
-          title="Choose your pricing policy"
+          slogan="Тарифи"
+          title="Обери свій тарифний план"
         />
         <Box sx={styles.pricingWrapper} className="pricing__wrapper">
           <Carousel {...sliderParams}>

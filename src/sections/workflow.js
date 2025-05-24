@@ -39,8 +39,7 @@ export default function WorkFlow() {
     <section sx={styles.workflow}>
       <Container>
         <SectionHeader
-          slogan="Whats the function"
-          title="Let’s see how it works"
+          title="Як це працює"
           isWhite={true}
         />
 

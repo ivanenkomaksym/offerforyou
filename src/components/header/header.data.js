@@ -1,18 +1,18 @@
 export default [
   {
     path: 'home',
-    label: 'Home',
+    label: 'Головна',
   },
   {
     path: 'feature',
-    label: 'Features',
+    label: 'Послуги',
   },
   {
     path: 'pricing',
-    label: 'Pricing',
+    label: 'Ціни',
   },
   {
     path: 'testimonial',
-    label: 'Testimonial',
+    label: 'Відгуки',
   },
 ];

@@ -182,8 +182,8 @@ export default function TeamSection() {
     <section>
       <Container>
         <SectionHeader
-          slogan="our team"
-          title="The most qualified and talented individuals"
+          slogan="Наша команда"
+          title="Найбільш кваліфіковані та талановиті люди"
         />
 
         <Grid sx={styles.grid}>

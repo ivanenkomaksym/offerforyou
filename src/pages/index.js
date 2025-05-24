@@ -24,13 +24,10 @@ export default function IndexPage() {
           <SEO title="Startup Agency Modern Landing" />
           <Banner />
           <KeyFeature />
-          <ServiceSection />
           <WorkFlow />
           <Package />
           <TeamSection />
           <TestimonialCard />
-          <BlogSection />
-          <Subscribe />
         </Layout>
       </StickyProvider>
     </ThemeProvider>

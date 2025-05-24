@@ -11,12 +11,11 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-          Top Quality Digital Products To Explore
+          Кар'єра без кордонів
           </Heading>
           <Text as="p" variant="heroSecondary">
           Професійний супровід та підтримка на шляху до кар'єрних вершин
           </Text>
-          <Button variant="primary">Explore</Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>

@@ -2,44 +2,17 @@
 import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
-import FooterLogo from 'assets/logo.svg';
+import FooterLogo from 'assets/offer_for_you_logo.png';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
-        <Grid sx={styles.widgets}>
-          {data.widgets.map((item) => (
-            <Box
-              key={`footer-widget--key${item.id}`}
-              sx={styles.widgets.widgetItem}
-            >
-              <Image src={item.iconSrc} alt={item.altText} />
-              <Box sx={styles.widgets.infoWrapper}>
-                <Heading as="h3">{item.title}</Heading>
-                <Text as="p">{item.description}</Text>
-              </Box>
-            </Box>
-          ))}
-        </Grid>
-        {/* End of footer widgets area */}
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
             <Image src={FooterLogo} alt="Logo" />
           </Link>
-          <Box sx={styles.footer.menus}>
-            <nav>
-              {data.menuItem.map(({ path, label }, i) => (
-                <Link
-                  path={path}
-                  key={i}
-                  label={label}
-                  sx={styles.footer.link}
-                />
-              ))}
-            </nav>
-          </Box>
           <Text sx={styles.footer.copyright}>
-            Copyright by {new Date().getFullYear()} RedQ, Inc
+            Copyright by {new Date().getFullYear()} Offer For You
           </Text>
         </Box>
       </Container>
