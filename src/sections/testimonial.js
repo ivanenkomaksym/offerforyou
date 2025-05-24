@@ -5,51 +5,49 @@ import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 
-import Avatar1 from 'assets/testimonial/avatar1.png';
-import Avatar2 from 'assets/testimonial/avatar2.png';
-import Avatar3 from 'assets/testimonial/avatar3.png';
-import Avatar4 from 'assets/testimonial/avatar4.png';
+import Vlad from 'assets/testimonial/vlad.png';
+import Kyrylo from 'assets/testimonial/kyrylo.png';
+import Olena from 'assets/testimonial/olena.png';
+import Iryna from 'assets/testimonial/iryna.png';
+import Mykyta from 'assets/testimonial/mykyta.png';
 
 const data = [
   {
     id: 1,
-    title: 'Modern look & trending design',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar1,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
-    review: 4,
+    title: 'Oфер через мiсяць спiвпрацi',
+    name: 'Влад',
+    review: 5,
+    screenshot: Vlad
   },
   {
     id: 2,
-    title: 'Design Quality & performance',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar2,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    title: 'Отримав 2 запрошення на iнтерв`ю з самого початку роботи з нами!',
+    name: 'Кирило',
     review: 5,
+    screenshot: Kyrylo
   },
   {
     id: 3,
-    title: 'Layout and organized layers',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar3,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
+    title: 'Офер після допомоги з резюме та LinkedIn',
+    name: 'Олена',
     review: 5,
+    screenshot: Olena,
   },
   {
     id: 4,
-    title: 'Modern look & trending design',
-    description:
-      'Get working experience to work with this amazing team & in future want to work together for bright future projects and also make deposit to freelancer.',
-    avatar: Avatar4,
-    name: 'Denny Hilguston',
-    designation: '@denny.hil',
-    review: 4,
+    title: 'Офер після консультацій та допомоги з резюме',
+    avatar: Iryna,
+    name: 'Ірина',
+    review: 5,
+    screenshot: Iryna,
+  },
+  {
+    id: 5,
+    title: 'Успішний досвід в Німеччині',
+    avatar: Mykyta,
+    name: 'Микита',
+    review: 5,
+    screenshot: Mykyta,
   },
 ];
 
@@ -112,10 +110,10 @@ export default function TestimonialCard() {
                 {item.title}
               </Heading>
               <Text sx={styles.description}>{item.description}</Text>
+              <div className="image">
+                <Image src={item.screenshot} alt="Testimonial" />
+              </div>
               <div className="card-footer">
-                <div className="image">
-                  <Image src={item.avatar} alt="Client Image" />
-                </div>
                 <div className="reviewer-info">
                   <Heading as="h4" sx={styles.heading}>
                     {item.name}
@@ -155,13 +153,7 @@ const styles = {
       ml: 'auto',
       '.react-multi-carousel-item': {
         transition: 'all 0.25s',
-      },
-      '.react-multi-carousel-item--active:nth-of-type(4n)': {
-        opacity: '0.5',
-        '@media screen and (max-width: 1620px)': {
-          opacity: 1,
-        },
-      },
+      }
     },
   },
   reviewCard: {
