@@ -34,7 +34,7 @@ export default function PriceCard({
           <Button
             variant="primary"
             aria-label={buttonText}
-            sx={{ display: ['none', null, 'inline-flex'] }}
+            sx={{ display: 'inline-flex' }}
             as="a"
             href="https://t.me/Anastasiia_hrg">
             {buttonText}

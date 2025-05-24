@@ -38,7 +38,7 @@ const packages = {
         },
         {
           id: 4,
-          icon: <IoIosCloseCircle />,
+          icon: <IoIosCheckmarkCircle />,
           text: `Зустріч з лайфкоучем`,
           isAvailable: true,
         },

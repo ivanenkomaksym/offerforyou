@@ -2,14 +2,14 @@
 import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
 import { Link } from 'components/link';
 import data from './footer.data';
-import FooterLogo from 'assets/offer_for_you_logo.png';
+import FooterLogo from 'assets/offer_for_you_logo_dark.svg';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
           <Link path="/">
-            <Image src={FooterLogo} alt="Logo" />
+            <Image src={FooterLogo} alt="Logo"/>
           </Link>
           <Text sx={styles.footer.copyright}>
             Copyright by {new Date().getFullYear()} Offer For You
@@ -27,7 +27,7 @@ const styles = {
       borderTopColor: 'border_color',
       display: 'flex',
       pt: [7, null, 8],
-      pb: ['40px', null, '100px'],
+      pb: ['40px', null, '20px'],
       textAlign: 'center',
       flexDirection: 'column',
     },

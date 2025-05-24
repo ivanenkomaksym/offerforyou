@@ -3,7 +3,7 @@ import { jsx, Container, Flex, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoDark from 'assets/offer_for_you_logo.png';
+import LogoDark from 'assets/offer_for_you_logo_dark.svg';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
@@ -35,7 +35,7 @@ export default function Header({ className }) {
             className="donate__btn"
             variant="secondary"
             aria-label="Get Started"
-            sx={{ display: ['none', null, 'inline-flex'] }}
+            sx={{ display: 'inline-flex' }}
             as="a"
             href="https://t.me/Anastasiia_hrg"
           >
