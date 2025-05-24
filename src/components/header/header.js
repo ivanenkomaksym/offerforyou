@@ -35,8 +35,11 @@ export default function Header({ className }) {
             className="donate__btn"
             variant="secondary"
             aria-label="Get Started"
+            sx={{ display: ['none', null, 'inline-flex'] }}
+            as="a"
+            href="https://t.me/Anastasiia_hrg"
           >
-            Get Started
+            Зв'язатися
           </Button>
 
           <MobileDrawer />

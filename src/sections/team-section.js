@@ -3,14 +3,12 @@ import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import TeamCard from 'components/team-card';
-import { FaFacebookF, FaTwitter, FaInstagram } from 'react-icons/fa';
+import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 import Member1 from 'assets/team/taisia.png';
 import Member2 from 'assets/team/anastasia.png';
-import Member3 from 'assets/team/member-3.png';
-import Member4 from 'assets/team/member-4.png';
-import Member5 from 'assets/team/member-5.png';
-import Member6 from 'assets/team/member-6.png';
+import Member3 from 'assets/team/maksym.png';
+import Member4 from 'assets/team/viktoriia.png';
 
 const data = [
   {
@@ -18,26 +16,14 @@ const data = [
     imgSrc: Member1,
     altText: 'Таісія',
     title: 'Таісія',
-    designation: 'CEO and Founder',
+    designation: 'HR-лідер і кар\'єрний консультант із глибокою експертизою в управлінні талантами, стратегічному рекрутингу та розвитку організацій',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/taisiia-ivanenko-5a3256214/',
+        icon: <FaLinkedin />,
+      }
     ],
   },
   {
@@ -45,136 +31,46 @@ const data = [
     imgSrc: Member2,
     altText: 'Анастасія',
     title: 'Анастасія',
-    designation: 'Founder',
+    designation: 'HR-лідер із багаторічним досвідом у міжнародному наймі, управлінні талантами та оптимізації HR-процесів',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/anastasiaandrushchenko/',
+        icon: <FaLinkedin />,
+      }
     ],
   },
   {
     id: 3,
     imgSrc: Member3,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
+    altText: 'Максим',
+    title: 'Максим',
+    designation: 'Технічний експерт і лідер із 12-річним досвідом у розробці дистрибутивних систем, мікросервісів і хмарних рішень',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/ivanenkomaksym/',
+        icon: <FaLinkedin />,
+      }
     ],
   },
   {
     id: 4,
     imgSrc: Member4,
-    altText: 'Lina Jutila',
-    title: 'Lina Jutila',
-    designation: 'Web Developer',
+    altText: 'Вікторія',
+    title: 'Вікторія',
+    designation: 'Психолог, лайф-коуч, експерт із самореалізації, розвитку впевненості та подолання внутрішніх бар’єрів',
     socialProfile: [
       {
         id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
+        name: 'linkedin',
+        path: 'https://www.linkedin.com/in/viktoriiapaderina/',
+        icon: <FaLinkedin />,
+      }
     ],
-  },
-  {
-    id: 5,
-    imgSrc: Member5,
-    altText: 'Saimon Harmer',
-    title: 'Saimon Harmer',
-    designation: 'CEO and Founder',
-    socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
-    ],
-  },
-  {
-    id: 6,
-    imgSrc: Member6,
-    altText: 'Aaron Nunez',
-    title: 'Aaron Nunez',
-    designation: 'Web Designer',
-    socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: '#',
-        icon: <FaFacebookF />,
-      },
-      {
-        id: 2,
-        name: 'twitter',
-        path: '#',
-        icon: <FaTwitter />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: '#',
-        icon: <FaInstagram />,
-      },
-    ],
-  },
+  }
 ];
 
 export default function TeamSection() {

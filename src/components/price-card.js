@@ -31,7 +31,12 @@ export default function PriceCard({
           {priceWithUnit}
         </Text>
         <Box sx={styles.buttonGroup}>
-          <Button variant="primary" aria-label={buttonText}>
+          <Button
+            variant="primary"
+            aria-label={buttonText}
+            sx={{ display: ['none', null, 'inline-flex'] }}
+            as="a"
+            href="https://t.me/Anastasiia_hrg">
             {buttonText}
           </Button>
           {anotherOption && (
