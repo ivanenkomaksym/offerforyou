@@ -1,10 +1,10 @@
-import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
+import { Container, Heading, Text, Box } from 'theme-ui';
+import Image from 'next/image';
 import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
 
-import Iryna from 'assets/testimonial/iryna.png';
 import Vlad from 'assets/testimonial/vlad.png';
 import Kyrylo from 'assets/testimonial/kyrylo.png';
 import Olena from 'assets/testimonial/olena.png';

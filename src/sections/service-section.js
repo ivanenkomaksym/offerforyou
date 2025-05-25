@@ -1,18 +1,17 @@
 import React, { useState } from 'react';
 import {
-  jsx,
   Container,
   Box,
   Grid,
   Text,
   Heading,
-  Button,
-  Image,
+  Button
 } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { keyframes } from '@emotion/react';
 import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
+import Image from 'next/image';
 
 import ServiceThumb from 'assets/service-thumb.png';
 import shapePattern from 'assets/shape-pattern1.png';

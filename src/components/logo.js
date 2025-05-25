@@ -1,4 +1,4 @@
-import { Container, Image, Box, Heading, Text } from 'theme-ui';
+import Image from 'next/image';
 import { Link } from 'components/link';
 
 export default function Logo({ src, ...rest }) {

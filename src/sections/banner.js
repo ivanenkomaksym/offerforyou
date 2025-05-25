@@ -1,4 +1,5 @@
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
+import { Container, Box, Heading, Text, Button } from 'theme-ui';
+import Image from 'next/image';
 import BannerImg from 'assets/banner-thumb2.png';
 import ShapeLeft from 'assets/shape-left.png';
 import ShapeRight from 'assets/shape-right.png';

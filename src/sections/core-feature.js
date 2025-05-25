@@ -1,6 +1,6 @@
-import { jsx, Container, Box } from 'theme-ui';
+import { Container, Box } from 'theme-ui';
 import TextFeature from 'components/text-feature';
-import Image from 'components/image';
+import Image from 'next/image';
 
 import FeatureThumb from 'assets/core-feature.png';
 import shapePattern from 'assets/shape-pattern2.png';

@@ -1,4 +1,5 @@
-import { jsx, Image, Box, Heading, Text, Flex, Link } from 'theme-ui';
+import { Box, Heading, Text, Flex, Link } from 'theme-ui';
+import Image from 'next/image';
 
 export default function PostCard({
   src,
