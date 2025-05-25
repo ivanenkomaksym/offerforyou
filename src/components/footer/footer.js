@@ -1,4 +1,3 @@
-/** @jsx jsx */
 import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
 export default function Footer() {
   return (

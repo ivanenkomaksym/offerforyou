@@ -1,10 +1,9 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import TeamCard from 'components/team-card';
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
+import Member1 from 'assets/team/taisia.png';
 import Member1 from 'assets/team/taisia.png';
 import Member2 from 'assets/team/anastasia.png';
 import Member3 from 'assets/team/maksym.png';
