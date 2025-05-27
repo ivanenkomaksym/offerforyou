@@ -1,4 +1,3 @@
-import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
@@ -44,7 +43,7 @@ const data = [
 
 export default function Feature() {
   return (
-    <section sx={{ variant: 'section.feature' }}>
+    <Box as='section' sx={{ variant: 'section.feature' }}>
       <Container>
         <SectionHeader
           slogan="Quality features"
@@ -63,7 +62,7 @@ export default function Feature() {
           ))}
         </Grid>
       </Container>
-    </section>
+    </Box>
   );
 }
 

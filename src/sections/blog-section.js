@@ -1,4 +1,3 @@
-import { jsx } from 'theme-ui';
 import { Container, Box } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import PostCard from 'components/post-card.js';
@@ -72,7 +71,7 @@ const responsive = {
 
 export default function BlogSection() {
   return (
-    <section sx={{ variant: 'section.news' }}>
+    <Box as='section' sx={{ variant: 'section.news' }}>
       <Container>
         <SectionHeader
           slogan="our blog"
@@ -116,7 +115,7 @@ export default function BlogSection() {
           </Carousel>
         </Box>
       </Container>
-    </section>
+    </Box>
   );
 }
 

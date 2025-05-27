@@ -1,6 +1,5 @@
 import { useRef, useState } from 'react';
 import fetch from 'isomorphic-unfetch';
-import { jsx } from 'theme-ui';
 import { Container, Flex, Box, Button, Input, Text, Heading } from 'theme-ui';
 
 export default function Subscribe() {

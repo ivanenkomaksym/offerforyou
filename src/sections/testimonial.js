@@ -76,7 +76,7 @@ const responsive = {
 
 export default function TestimonialCard() {
   return (
-    <section id="testimonial" sx={{ variant: 'section.testimonial' }}>
+    <Box as='section' id="testimonial" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>
         <SectionHeader slogan="Відгуки" title="Задовольняємо потреби клієнтів" />
       </Container>
@@ -111,7 +111,11 @@ export default function TestimonialCard() {
               </Heading>
               <Text sx={styles.description}>{item.description}</Text>
               <div className="image">
-                <Image src={item.screenshot} alt="Testimonial" />
+                <Image src={item.screenshot}   alt="Testimonial"
+                  layout="responsive"
+                  width={55}
+                  height={55}
+                />
               </div>
               <div className="card-footer">
                 <div className="reviewer-info">
@@ -125,7 +129,7 @@ export default function TestimonialCard() {
           ))}
         </Carousel>
       </Box>
-    </section>
+    </Box>
   );
 }
 
@@ -211,12 +215,16 @@ const styles = {
         flexShrink: 0,
         mr: [3, null, null, 4],
         display: 'flex',
-        img: {
-          width: '55px',
-          height: '55px',
-          borderRadius: '50%',
-          objectFit: 'cover',
-        },
+        maxWidth: '100%',       // never exceed container width
+        overflow: 'hidden',
+      },
+
+      '.image img': {
+        width: '100%',          // fill container width
+        height: 'auto',         // scale height proportionally
+        display: 'block',       // remove bottom gap
+        borderRadius: '50%',    // if you want circular images like avatars
+        objectFit: 'contain',   // keep entire image visible without cropping
       },
     },
   },

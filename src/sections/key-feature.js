@@ -1,5 +1,4 @@
-import { jsx } from 'theme-ui';
-import { Container, Grid } from 'theme-ui';
+import { Box, Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
 import Performance from 'assets/key-feature/performance.svg';
@@ -44,7 +43,7 @@ const data = [
 
 export default function KeyFeature() {
   return (
-    <section sx={{ variant: 'section.keyFeature' }} id="feature">
+    <Box as='section' sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
         <SectionHeader
           title="Наші послуги"
@@ -62,7 +61,7 @@ export default function KeyFeature() {
           ))}
         </Grid>
       </Container>
-    </section>
+    </Box>
   );
 }
 

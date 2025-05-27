@@ -1,4 +1,3 @@
-import { jsx } from 'theme-ui';
 import React, { useState } from 'react';
 import Sticky from 'react-stickynode';
 import Header from './header/header';

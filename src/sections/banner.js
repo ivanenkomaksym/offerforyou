@@ -6,7 +6,7 @@ import ShapeRight from 'assets/shape-right.png';
 
 export default function Banner() {
   return (
-    <section sx={styles.banner} id="home">
+    <Box as="header" sx={styles.banner} id="home">
       {/* Manually add background shapes */}
       <Box
         as="span"
@@ -51,7 +51,7 @@ export default function Banner() {
           <Image src={BannerImg} alt="banner" />
         </Box>
       </Container>
-    </section>
+    </Box>
   );
 }
 
