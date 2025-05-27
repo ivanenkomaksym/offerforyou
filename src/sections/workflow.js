@@ -34,7 +34,7 @@ const data = [
 
 export default function WorkFlow() {
   return (
-    <section sx={styles.workflow}>
+    <Box as="section" sx={styles.workflow}>
       <Container>
         <SectionHeader
           title="Як це працює"
@@ -53,7 +53,7 @@ export default function WorkFlow() {
           ))}
         </Grid>
       </Container>
-    </section>
+    </Box>
   );
 }
 

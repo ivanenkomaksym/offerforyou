@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { Link } from 'components/link';
+import { Heading, Box, Text } from 'theme-ui';
 
 export default function Logo({ src, ...rest }) {
   return (

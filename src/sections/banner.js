@@ -7,16 +7,46 @@ import ShapeRight from 'assets/shape-right.png';
 export default function Banner() {
   return (
     <section sx={styles.banner} id="home">
+      {/* Manually add background shapes */}
+      <Box
+        as="span"
+        sx={{
+          position: 'absolute',
+          bottom: 6,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: -1,
+          backgroundImage: `url(${ShapeLeft.src})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'bottom left',
+          backgroundSize: '36%',
+        }}
+      />
+      <Box
+        as="span"
+        sx={{
+          position: 'absolute',
+          bottom: '40px',
+          right: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: -1,
+          backgroundImage: `url(${ShapeRight.src})`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'bottom right',
+          backgroundSize: '32%',
+        }}
+      />
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-          Кар'єра без кордонів
+            Кар'єра без кордонів
           </Heading>
           <Text as="p" variant="heroSecondary">
-          Професійний супровід та підтримка на шляху до кар'єрних вершин
+            Професійний супровід та підтримка на шляху до кар'єрних вершин
           </Text>
         </Box>
-
         <Box sx={styles.banner.imageBox}>
           <Image src={BannerImg} alt="banner" />
         </Box>
