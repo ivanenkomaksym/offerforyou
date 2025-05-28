@@ -1,8 +1,5 @@
-import { Container, Box, Heading, Text, Button } from 'theme-ui';
-import Image from 'next/image';
-import BannerImg from 'assets/banner-thumb2.png';
-import ShapeLeft from 'assets/shape-left.png';
-import ShapeRight from 'assets/shape-right.png';
+import { Container, Box, Heading, Text } from 'theme-ui';
+import Image from 'next/image'
 
 export default function Banner() {
   return (
@@ -17,7 +14,7 @@ export default function Banner() {
           width: '100%',
           height: '100%',
           zIndex: -1,
-          backgroundImage: `url(${ShapeLeft.src})`,
+          backgroundImage: `url('/assets/shape-left.png')`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'bottom left',
           backgroundSize: '36%',
@@ -32,7 +29,7 @@ export default function Banner() {
           width: '100%',
           height: '100%',
           zIndex: -1,
-          backgroundImage: `url(${ShapeRight.src})`,
+          backgroundImage: `url('/assets/shape-right.png')`,
           backgroundRepeat: 'no-repeat',
           backgroundPosition: 'bottom right',
           backgroundSize: '32%',
@@ -48,7 +45,7 @@ export default function Banner() {
           </Text>
         </Box>
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt="banner" />
+          <Image src='/assets/banner-thumb2.png' alt="banner" width={714} height={678}/>
         </Box>
       </Container>
     </Box>
@@ -69,7 +66,7 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(${ShapeLeft})`,
+      backgroundImage: `url('/assets/shape-left.png')`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
       backgroundSize: '36%',
@@ -82,7 +79,7 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(${ShapeRight})`,
+      backgroundImage: `url('/assets/shape-right.png')`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
       backgroundSize: '32%',

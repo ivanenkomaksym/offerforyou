@@ -4,7 +4,7 @@ import { Heading, Box, Text } from 'theme-ui';
 
 export default function Logo({ src, ...rest }) {
   return (
-    <Box sx={styles.container} {...rest}>
+    <Heading sx={styles.container} {...rest}>
       {/* Logo with text */}
       {/* Assuming src is the path to the logo image */}
       {/* Adjust the path as necessary based on your project structure */}
@@ -19,7 +19,7 @@ export default function Logo({ src, ...rest }) {
         }}
         {...rest}
       >
-        <Image src={src} alt="startup landing logo" />
+        <Image src={src} alt="startup landing logo" width={75} height={75}/>
       </Link>
       <div>
         <Box sx={{
@@ -36,7 +36,7 @@ export default function Logo({ src, ...rest }) {
           </Text>
         </Box>
       </div>
-    </Box>
+    </Heading>
   );
 }
 

@@ -1,15 +1,11 @@
 import { Box, Container, Grid } from 'theme-ui';
 import SectionHeader from '../components/section-header';
 import FeatureCardColumn from 'components/feature-card-column.js';
-import Performance from 'assets/key-feature/performance.svg';
-import Partnership from 'assets/key-feature/partnership.svg';
-import Subscription from 'assets/key-feature/subscription.svg';
-import Support from 'assets/key-feature/support.svg';
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
+    imgSrc: '/assets/key-feature/performance.svg',
     altText: 'Оновлення резюме',
     title: 'Оновлення резюме',
     text:
@@ -17,7 +13,7 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: Partnership,
+    imgSrc: '/assets/key-feature/partnership.svg',
     altText: 'Кар\'єрна консультація',
     title: 'Кар\'єрна консультація',
     text:
@@ -25,7 +21,7 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: Subscription,
+    imgSrc: '/assets/key-feature/subscription.svg',
     altText: 'LinkedIn',
     title: 'LinkedIn',
     text:
@@ -33,7 +29,7 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: Support,
+    imgSrc: '/assets/key-feature/support.svg',
     altText: 'Кар’єрний план',
     title: 'Кар’єрний план',
     text:

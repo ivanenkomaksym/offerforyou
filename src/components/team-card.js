@@ -4,7 +4,7 @@ import Image from 'next/image';
 export default function TeamCard({ src, altText, title, designation, social }) {
   return (
     <Box sx={styles.card}>
-      <Image src={src} alt={altText} sx={styles.memberThumb} />
+      <Image src={src} alt={altText} sx={styles.memberThumb} width={187} height={193}/>
       <Box sx={styles.infoWrapper}>
         <Heading className="info__name" sx={styles.infoWrapper.name}>
           {title}

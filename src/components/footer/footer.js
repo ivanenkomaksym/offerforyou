@@ -1,7 +1,4 @@
 import { Box, Container, Text } from 'theme-ui';
-import Image from 'next/image';
-import { Link } from 'components/link';
-import FooterLogo from 'assets/offer_for_you_logo_dark.svg';
 export default function Footer() {
   return (
     <footer sx={styles.footer}>

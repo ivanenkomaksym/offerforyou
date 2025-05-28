@@ -2,7 +2,6 @@ import { Container, Flex, Box, Button } from 'theme-ui';
 import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoTransparent from 'assets/offer_for_you_logo_transparent.png';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
 import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
@@ -12,7 +11,7 @@ export default function Header({ className }) {
     <DrawerProvider>
       <Box as="header" sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={LogoTransparent} />
+          <Logo src='/assets/offer_for_you_logo_transparent.png' />
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link

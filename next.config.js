@@ -1,6 +1,10 @@
-const withPlugins = require('next-compose-plugins');
-
-const nextConfiguration = {
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export',
+  images: {
+    // THIS IS THE LINE YOU NEED TO ADD/ENSURE IS PRESENT
+    unoptimized: true,
+  },
 };
 
-module.exports = withPlugins([], nextConfiguration);
+module.exports = nextConfig;

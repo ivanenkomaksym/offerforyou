@@ -11,13 +11,9 @@ import { keyframes } from '@emotion/react';
 import TextFeature from 'components/text-feature';
 import ModalVideo from 'react-modal-video';
 import { IoIosPlay } from 'react-icons/io';
-import Image from 'next/image';
 
-import ServiceThumb from 'assets/service-thumb.png';
-import shapePattern from 'assets/shape-pattern1.png';
-
-import Smart from 'assets/services/smart.svg';
-import Secure from 'assets/services/secure.svg';
+import Smart from '/assets/services/smart.svg';
+import Secure from '/assets/services/secure.svg';
 
 const data = {
   subTitle: 'our services',
@@ -53,7 +49,7 @@ export default function ServiceSection() {
     <Box as='section' sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
-          <Image src={ServiceThumb} alt="Thumbnail" />
+          <Image src='/assets/service-thumb.png' alt="Thumbnail" />
           <Button
             sx={styles.videoBtn}
             onClick={handleClick}
@@ -65,7 +61,7 @@ export default function ServiceSection() {
           </Button>
 
           <Box sx={styles.shapeBox}>
-            <Image src={shapePattern} alt="Shape" />
+            <Image src='/assets/shape-pattern1.png' alt="Shape" />
           </Box>
         </Box>
         <Box sx={styles.contentBox}>

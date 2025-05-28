@@ -1,15 +1,9 @@
 import { Container, Heading, Text, Box } from 'theme-ui';
-import Image from 'next/image';
 import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-
-import Vlad from 'assets/testimonial/vlad.png';
-import Kyrylo from 'assets/testimonial/kyrylo.png';
-import Olena from 'assets/testimonial/olena.png';
-import Iryna from 'assets/testimonial/iryna.png';
-import Mykyta from 'assets/testimonial/mykyta.png';
+import Image from 'next/image'
 
 const data = [
   {
@@ -17,37 +11,37 @@ const data = [
     title: 'Oфер через мiсяць спiвпрацi',
     name: 'Влад',
     review: 5,
-    screenshot: Vlad
+    screenshot: '/assets/testimonial/vlad.png'
   },
   {
     id: 2,
     title: 'Отримав 2 запрошення на iнтерв`ю з самого початку роботи з нами!',
     name: 'Кирило',
     review: 5,
-    screenshot: Kyrylo
+    screenshot: '/assets/testimonial/kyrylo.png'
   },
   {
     id: 3,
     title: 'Офер після допомоги з резюме та LinkedIn',
     name: 'Олена',
     review: 5,
-    screenshot: Olena,
+    screenshot: '/assets/testimonial/olena.png',
   },
   {
     id: 4,
     title: 'Офер після консультацій та допомоги з резюме',
-    avatar: Iryna,
+    avatar: 'Ірина',
     name: 'Ірина',
     review: 5,
-    screenshot: Iryna,
+    screenshot: '/assets/testimonial/iryna.png',
   },
   {
     id: 5,
     title: 'Успішний досвід в Німеччині',
-    avatar: Mykyta,
+    avatar: 'Микита',
     name: 'Микита',
     review: 5,
-    screenshot: Mykyta,
+    screenshot: '/assets/testimonial/mykyta.png',
   },
 ];
 
@@ -111,11 +105,7 @@ export default function TestimonialCard() {
               </Heading>
               <Text sx={styles.description}>{item.description}</Text>
               <div className="image">
-                <Image src={item.screenshot}   alt="Testimonial"
-                  layout="responsive"
-                  width={55}
-                  height={55}
-                />
+                <Image src={item.screenshot}   alt="Testimonial" layout="responsive" width={250} height={150}/>
               </div>
               <div className="card-footer">
                 <div className="reviewer-info">
