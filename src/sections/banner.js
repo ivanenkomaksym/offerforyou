@@ -45,7 +45,7 @@ export default function Banner() {
           </Text>
         </Box>
         <Box sx={styles.banner.imageBox}>
-          <Image src='/assets/banner-thumb2.png' alt="banner" width={714} height={678}/>
+          <Image src='/assets/banner-thumb2.png' alt="banner" width={714} height={678} style={{ objectFit: 'contain' }} />
         </Box>
       </Container>
     </Box>

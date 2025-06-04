@@ -50,16 +50,23 @@ const styles = {
         },
       },
     },
+    img: {
+      width: ['100px', '110px', '120px', null, null, '130px'],
+      height: ['100px', '110px', '120px', null, null, '130px'],
+      border: '2px solid',
+      borderColor: 'primary',
+      borderRadius: '50%',
+    },
   },
 
-  memberThumb: {
-    width: ['70px', '80px', '100px', null, null, '130px'],
-    height: ['70px', '80px', '100px', null, null, '130px'],
-    flexShrink: 0,
-    border: '2px solid',
-    borderColor: 'primary',
-    borderRadius: '50%',
-  },
+memberThumb: {
+  width: ['70px', '80px', '100px', null, null, '130px'],
+  height: ['70px', '80px', '100px', null, null, '130px'],
+  flexShrink: 0,
+  border: '2px solid',
+  borderColor: 'primary',
+  borderRadius: '50%',
+},
   infoWrapper: {
     width: '100%',
     textAlign: 'center',
