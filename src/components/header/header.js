@@ -3,7 +3,6 @@ import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
-import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
 export default function Header({ className }) {
@@ -38,8 +37,6 @@ export default function Header({ className }) {
           >
             Зв'язатися
           </Button>
-
-          <MobileDrawer />
         </Container>
       </Box>
     </DrawerProvider>
