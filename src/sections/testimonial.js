@@ -105,7 +105,7 @@ export default function TestimonialCard() {
               </Heading>
               <Text sx={styles.description}>{item.description}</Text>
               <div className="image">
-                <Image src={item.screenshot}   alt="Testimonial" layout="responsive" width={250} height={150}/>
+                <Image src={item.screenshot} alt="Testimonial" layout="responsive" width={250} height={150}/>
               </div>
               <div className="card-footer">
                 <div className="reviewer-info">
@@ -162,7 +162,7 @@ const styles = {
       '30px 30px 35px',
       '35px 30px 40px 40px',
     ],
-    bg: 'white',
+    bg: 'background',
     textAlign: 'left',
     m: [
       '28px 5px 30px 5px',

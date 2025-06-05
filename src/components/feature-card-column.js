@@ -40,7 +40,7 @@ const styles = {
     flexDirection: 'column',
     title: {
       fontSize: 3,
-      color: 'heading_secondary',
+      color: 'text',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, 3],

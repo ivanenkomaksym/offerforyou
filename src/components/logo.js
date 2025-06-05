@@ -53,7 +53,7 @@ const styles = {
     fontWeight: 'bold', // Or '700'
     textAlign: 'center', // Or 'left'/'right' depending on where you place it
     lineHeight: 1.2, // Adjust line height if necessary
-    color: 'black', // The desired black color
+    color: 'text', // The desired black color
 
     // You might need to adjust letter spacing or text transform based on the exact image
     // letterSpacing: '0.1em',
@@ -65,7 +65,7 @@ const styles = {
     fontWeight: 'normal',
     textAlign: 'center',
     lineHeight: 1.2,
-    color: 'black',
+    color: 'text',
     // letterSpacing: '0.1em',
     // textTransform: 'uppercase',
   },
