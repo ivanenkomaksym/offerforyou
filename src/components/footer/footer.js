@@ -1,9 +1,25 @@
-import { Box, Container, Text } from 'theme-ui';
+import { Box, Container, Text, Link } from 'theme-ui';
+import { FaLinkedin } from 'react-icons/fa';
+
+const social = [
+  {
+    path: 'https://www.linkedin.com/company/offer-for-you/',
+    icon: <FaLinkedin />,
+  },
+];
+
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
+          <Box sx={styles.social}>
+            {social.map(({ path, icon }, i) => (
+              <Box as="span" key={i} sx={styles.social.icon}>
+                <Link href={path}>{icon}</Link>
+              </Box>
+            ))}
+          </Box>
           <Text sx={styles.footer.copyright}>
             Copyright by {new Date().getFullYear()} Offer For You
           </Text>
@@ -86,4 +102,28 @@ const styles = {
       },
     },
   },
+
+  social: {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    icon: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'text',
+      fontSize: 32,
+      mr: '15px',
+      transition: 'all 0.25s',
+      cursor: 'pointer',
+      ':last-child': {
+        mr: '0',
+      },
+      '&:hover': {
+        color: 'secondary',
+      },
+    }
+  }
 };
