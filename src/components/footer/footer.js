@@ -1,11 +1,15 @@
 import { Box, Container, Text, Link } from 'theme-ui';
-import { FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 const social = [
   {
     path: 'https://www.linkedin.com/company/offer-for-you/',
     icon: <FaLinkedin />,
   },
+  {
+    path: 'https://www.instagram.com/offerforyou33?igsh=MTh3cXB4aDNrb3M2eA==',
+    icon: <FaInstagram />
+  }
 ];
 
 export default function Footer() {
