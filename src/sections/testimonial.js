@@ -162,7 +162,6 @@ const styles = {
       '30px 30px 35px',
       '35px 30px 40px 40px',
     ],
-    bg: 'background',
     textAlign: 'left',
     m: [
       '28px 5px 30px 5px',
