@@ -1,19 +1,12 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import TeamCard from 'components/team-card';
-import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
-
-import Member1 from 'assets/team/taisia.png';
-import Member2 from 'assets/team/anastasia.png';
-import Member3 from 'assets/team/maksym.png';
-import Member4 from 'assets/team/viktoriia.png';
+import { FaLinkedin } from 'react-icons/fa';
 
 const data = [
   {
     id: 1,
-    imgSrc: Member1,
+    imgSrc: '/assets/team/taisia.png',
     altText: 'Таісія',
     title: 'Таісія',
     designation: 'HR-лідер і кар\'єрний консультант із глибокою експертизою в управлінні талантами, стратегічному рекрутингу та розвитку організацій',
@@ -28,7 +21,7 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: Member2,
+    imgSrc: '/assets/team/anastasia.png',
     altText: 'Анастасія',
     title: 'Анастасія',
     designation: 'HR-лідер із багаторічним досвідом у міжнародному наймі, управлінні талантами та оптимізації HR-процесів',
@@ -43,7 +36,7 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: Member3,
+    imgSrc: '/assets/team/maksym.png',
     altText: 'Максим',
     title: 'Максим',
     designation: 'Технічний експерт і лідер із 12-річним досвідом у розробці дистрибутивних систем, мікросервісів і хмарних рішень',
@@ -58,7 +51,7 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: Member4,
+    imgSrc: '/assets/team/viktoriia.png',
     altText: 'Вікторія',
     title: 'Вікторія',
     designation: 'Психолог, лайф-коуч, експерт із самореалізації, розвитку впевненості та подолання внутрішніх бар’єрів',

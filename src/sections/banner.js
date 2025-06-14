@@ -1,28 +1,54 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Container, Box, Heading, Text, Image, Button } from 'theme-ui';
-import BannerImg from 'assets/banner-thumb2.png';
-import ShapeLeft from 'assets/shape-left.png';
-import ShapeRight from 'assets/shape-right.png';
+import { Container, Box, Heading, Text } from 'theme-ui';
+import Image from 'next/image'
 
 export default function Banner() {
   return (
-    <section sx={styles.banner} id="home">
+    <Box as="header" sx={styles.banner} id="home">
+      {/* Manually add background shapes */}
+      <Box
+        as="span"
+        sx={{
+          position: 'absolute',
+          bottom: 6,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: -1,
+          backgroundImage: `url('/assets/shape-left.png')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'bottom left',
+          backgroundSize: '36%',
+        }}
+      />
+      <Box
+        as="span"
+        sx={{
+          position: 'absolute',
+          bottom: '40px',
+          right: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: -1,
+          backgroundImage: `url('/assets/shape-right.png')`,
+          backgroundRepeat: 'no-repeat',
+          backgroundPosition: 'bottom right',
+          backgroundSize: '32%',
+        }}
+      />
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-          Кар'єра без кордонів
+            Кар'єра без кордонів
           </Heading>
           <Text as="p" variant="heroSecondary">
-          Професійний супровід та підтримка на шляху до кар'єрних вершин
+            Професійний супровід та підтримка на шляху до кар'єрних вершин
           </Text>
         </Box>
-
         <Box sx={styles.banner.imageBox}>
-          <Image src={BannerImg} alt="banner" />
+          <Image src='/assets/banner-thumb2.png' alt="banner" width={714} height={678} style={{ objectFit: 'contain' }} />
         </Box>
       </Container>
-    </section>
+    </Box>
   );
 }
 
@@ -40,7 +66,7 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(${ShapeLeft})`,
+      backgroundImage: `url('/assets/shape-left.png')`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom left',
       backgroundSize: '36%',
@@ -53,7 +79,7 @@ const styles = {
       height: '100%',
       width: '100%',
       zIndex: -1,
-      backgroundImage: `url(${ShapeRight})`,
+      backgroundImage: `url('/assets/shape-right.png')`,
       backgroundRepeat: `no-repeat`,
       backgroundPosition: 'bottom right',
       backgroundSize: '32%',

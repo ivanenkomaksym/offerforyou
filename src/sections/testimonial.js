@@ -1,15 +1,9 @@
-/** @jsx jsx */
-import { jsx, Container, Heading, Text, Box, Image } from 'theme-ui';
+import { Container, Heading, Text, Box } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import Rating from 'components/rating';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-
-import Vlad from 'assets/testimonial/vlad.png';
-import Kyrylo from 'assets/testimonial/kyrylo.png';
-import Olena from 'assets/testimonial/olena.png';
-import Iryna from 'assets/testimonial/iryna.png';
-import Mykyta from 'assets/testimonial/mykyta.png';
+import Image from 'next/image'
 
 const data = [
   {
@@ -17,37 +11,37 @@ const data = [
     title: 'Oфер через мiсяць спiвпрацi',
     name: 'Влад',
     review: 5,
-    screenshot: Vlad
+    screenshot: '/assets/testimonial/vlad.png'
   },
   {
     id: 2,
     title: 'Отримав 2 запрошення на iнтерв`ю з самого початку роботи з нами!',
     name: 'Кирило',
     review: 5,
-    screenshot: Kyrylo
+    screenshot: '/assets/testimonial/kyrylo.png'
   },
   {
     id: 3,
     title: 'Офер після допомоги з резюме та LinkedIn',
     name: 'Олена',
     review: 5,
-    screenshot: Olena,
+    screenshot: '/assets/testimonial/olena.png',
   },
   {
     id: 4,
     title: 'Офер після консультацій та допомоги з резюме',
-    avatar: Iryna,
+    avatar: 'Ірина',
     name: 'Ірина',
     review: 5,
-    screenshot: Iryna,
+    screenshot: '/assets/testimonial/iryna.png',
   },
   {
     id: 5,
     title: 'Успішний досвід в Німеччині',
-    avatar: Mykyta,
+    avatar: 'Микита',
     name: 'Микита',
     review: 5,
-    screenshot: Mykyta,
+    screenshot: '/assets/testimonial/mykyta.png',
   },
 ];
 
@@ -76,7 +70,7 @@ const responsive = {
 
 export default function TestimonialCard() {
   return (
-    <section id="testimonial" sx={{ variant: 'section.testimonial' }}>
+    <Box as='section' id="testimonial" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>
         <SectionHeader slogan="Відгуки" title="Задовольняємо потреби клієнтів" />
       </Container>
@@ -111,7 +105,7 @@ export default function TestimonialCard() {
               </Heading>
               <Text sx={styles.description}>{item.description}</Text>
               <div className="image">
-                <Image src={item.screenshot} alt="Testimonial" />
+                <Image src={item.screenshot} alt="Testimonial" layout="responsive" width={250} height={150}/>
               </div>
               <div className="card-footer">
                 <div className="reviewer-info">
@@ -125,7 +119,7 @@ export default function TestimonialCard() {
           ))}
         </Carousel>
       </Box>
-    </section>
+    </Box>
   );
 }
 
@@ -168,7 +162,6 @@ const styles = {
       '30px 30px 35px',
       '35px 30px 40px 40px',
     ],
-    bg: 'white',
     textAlign: 'left',
     m: [
       '28px 5px 30px 5px',
@@ -211,12 +204,16 @@ const styles = {
         flexShrink: 0,
         mr: [3, null, null, 4],
         display: 'flex',
-        img: {
-          width: '55px',
-          height: '55px',
-          borderRadius: '50%',
-          objectFit: 'cover',
-        },
+        maxWidth: '100%',       // never exceed container width
+        overflow: 'hidden',
+      },
+
+      '.image img': {
+        width: '100%',          // fill container width
+        height: 'auto',         // scale height proportionally
+        display: 'block',       // remove bottom gap
+        borderRadius: '50%',    // if you want circular images like avatars
+        objectFit: 'contain',   // keep entire image visible without cropping
       },
     },
   },

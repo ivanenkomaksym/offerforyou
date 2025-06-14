@@ -1,11 +1,10 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
-import { Text, Heading, Image, Box, Link } from 'theme-ui';
+import { Text, Heading, Box, Link } from 'theme-ui';
+import Image from 'next/image';
 
 export default function TeamCard({ src, altText, title, designation, social }) {
   return (
     <Box sx={styles.card}>
-      <Image src={src} alt={altText} sx={styles.memberThumb} />
+      <Image src={src} alt={altText} sx={styles.memberThumb} width={187} height={193}/>
       <Box sx={styles.infoWrapper}>
         <Heading className="info__name" sx={styles.infoWrapper.name}>
           {title}
@@ -51,16 +50,23 @@ const styles = {
         },
       },
     },
+    img: {
+      width: ['100px', '110px', '120px', null, null, '130px'],
+      height: ['100px', '110px', '120px', null, null, '130px'],
+      border: '2px solid',
+      borderColor: 'primary',
+      borderRadius: '50%',
+    },
   },
 
-  memberThumb: {
-    width: ['70px', '80px', '100px', null, null, '130px'],
-    height: ['70px', '80px', '100px', null, null, '130px'],
-    flexShrink: 0,
-    border: '2px solid',
-    borderColor: 'primary',
-    borderRadius: '50%',
-  },
+memberThumb: {
+  width: ['70px', '80px', '100px', null, null, '130px'],
+  height: ['70px', '80px', '100px', null, null, '130px'],
+  flexShrink: 0,
+  border: '2px solid',
+  borderColor: 'primary',
+  borderRadius: '50%',
+},
   infoWrapper: {
     width: '100%',
     textAlign: 'center',

@@ -4,7 +4,7 @@ import Head from 'next/head';
 export default function SEO({
   description = 'Offer For You Career Consulting',
   author = 'Offer For You, Inc',
-  meta,
+  meta = [],
   title = 'Offer For You Career Consulting',
 }) {
   const metaData = [

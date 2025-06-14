@@ -1,10 +1,10 @@
-/** @jsx jsx */
-import { jsx, Container, Image, Box, Heading, Text } from 'theme-ui';
+import Image from 'next/image';
 import { Link } from 'components/link';
+import { Heading, Box, Text } from 'theme-ui';
 
 export default function Logo({ src, ...rest }) {
   return (
-    <Box sx={styles.container} {...rest}>
+    <Heading sx={styles.container} {...rest}>
       {/* Logo with text */}
       {/* Assuming src is the path to the logo image */}
       {/* Adjust the path as necessary based on your project structure */}
@@ -19,7 +19,7 @@ export default function Logo({ src, ...rest }) {
         }}
         {...rest}
       >
-        <Image src={src} alt="startup landing logo" />
+        <Image src={src} alt="startup landing logo" width={75} height={75}/>
       </Link>
       <div>
         <Box sx={{
@@ -36,7 +36,7 @@ export default function Logo({ src, ...rest }) {
           </Text>
         </Box>
       </div>
-    </Box>
+    </Heading>
   );
 }
 
@@ -53,7 +53,7 @@ const styles = {
     fontWeight: 'bold', // Or '700'
     textAlign: 'center', // Or 'left'/'right' depending on where you place it
     lineHeight: 1.2, // Adjust line height if necessary
-    color: 'black', // The desired black color
+    color: 'text', // The desired black color
 
     // You might need to adjust letter spacing or text transform based on the exact image
     // letterSpacing: '0.1em',
@@ -65,7 +65,7 @@ const styles = {
     fontWeight: 'normal',
     textAlign: 'center',
     lineHeight: 1.2,
-    color: 'black',
+    color: 'text',
     // letterSpacing: '0.1em',
     // textTransform: 'uppercase',
   },

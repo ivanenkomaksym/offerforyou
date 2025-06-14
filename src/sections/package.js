@@ -1,6 +1,5 @@
-/** @jsx jsx */
 import { jsx, Container, Box, Flex } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { keyframes } from '@emotion/react';
 import React, { useState } from 'react';
 import Carousel from 'react-multi-carousel';
 import PriceCard from 'components/price-card';
@@ -298,7 +297,7 @@ export default function Package() {
   };
 
   return (
-    <section id="pricing" sx={{ variant: 'section.pricing' }}>
+    <Box as='section' id="pricing" sx={{ variant: 'section.pricing' }}>
       <Container>
         <SectionHeader
           slogan="Тарифи"
@@ -317,7 +316,7 @@ export default function Package() {
           </Carousel>
         </Box>
       </Container>
-    </section>
+    </Box>
   );
 }
 

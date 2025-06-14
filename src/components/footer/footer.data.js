@@ -1,12 +1,8 @@
-import Chat from 'assets/widget/chat.svg';
-import Community from 'assets/widget/community.svg';
-import Github from 'assets/widget/github.svg';
-
 export default {
   widgets: [
     {
       id: 1,
-      iconSrc: Chat,
+      iconSrc: '/assets/widget/chat.svg',
       altText: 'Community',
       title: 'Join the Community',
       description:
@@ -14,7 +10,7 @@ export default {
     },
     {
       id: 2,
-      iconSrc: Community,
+      iconSrc: '/assets/widget/community.svg',
       altText: 'Chat',
       title: 'Chat Communication',
       description:
@@ -22,7 +18,7 @@ export default {
     },
     {
       id: 3,
-      iconSrc: Github,
+      iconSrc: '/assets/widget/github.svg',
       altText: 'Github',
       title: 'Github Access',
       description:

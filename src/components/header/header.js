@@ -1,19 +1,16 @@
-/** @jsx jsx */
-import { jsx, Container, Flex, Button } from 'theme-ui';
-import { keyframes } from '@emotion/core';
+import { Container, Flex, Box, Button } from 'theme-ui';
+import { keyframes } from '@emotion/react';
 import { Link } from 'react-scroll';
 import Logo from 'components/logo';
-import LogoTransparent from 'assets/offer_for_you_logo_transparent.png';
 import { DrawerProvider } from '../../contexts/drawer/drawer.provider';
-import MobileDrawer from './mobile-drawer';
 import menuItems from './header.data';
 
 export default function Header({ className }) {
   return (
     <DrawerProvider>
-      <header sx={styles.header} className={className} id="header">
+      <Box as="header" sx={styles.header} className={className} id="header">
         <Container sx={styles.container}>
-          <Logo src={LogoTransparent} sx={{ mr: [-4, -4, -4] }}/>
+          <Logo src='/assets/offer_for_you_logo_transparent.png' />
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
               <Link
@@ -40,10 +37,8 @@ export default function Header({ className }) {
           >
             Зв'язатися
           </Button>
-
-          <MobileDrawer />
         </Container>
-      </header>
+      </Box>
     </DrawerProvider>
   );
 }
@@ -81,7 +76,7 @@ const styles = {
     '&.sticky': {
       position: 'fixed',
       backgroundColor: 'background',
-      color: '#000000',
+      color: 'text',
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
       py: 3,
       'nev > a': {

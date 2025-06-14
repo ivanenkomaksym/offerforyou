@@ -1,17 +1,11 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import { Container, Grid } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import FeatureCard from 'components/feature-card.js';
-import Performance from 'assets/feature/performance.svg';
-import Partnership from 'assets/feature/partnership.svg';
-import Subscription from 'assets/feature/subscription.svg';
-import Support from 'assets/feature/support.svg';
 
 const data = [
   {
     id: 1,
-    imgSrc: Performance,
+    imgSrc: '/assets/feature/performance.svg',
     altText: 'Підготовка резюме',
     title: 'Підготовка резюме',
     text:
@@ -19,7 +13,7 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: Partnership,
+    imgSrc: '/assets/feature/partnership.svg',
     altText: 'Pro Subscription',
     title: 'Pro Subscription',
     text:
@@ -27,7 +21,7 @@ const data = [
   },
   {
     id: 3,
-    imgSrc: Subscription,
+    imgSrc: '/assets/feature/subscription.svg',
     altText: 'Partnership deal',
     title: 'Partnership deal',
     text:
@@ -35,7 +29,7 @@ const data = [
   },
   {
     id: 4,
-    imgSrc: Support,
+    imgSrc: '/assets/feature/support.svg',
     altText: 'Customer Support',
     title: 'Customer Support',
     text:
@@ -45,7 +39,7 @@ const data = [
 
 export default function Feature() {
   return (
-    <section sx={{ variant: 'section.feature' }}>
+    <Box as='section' sx={{ variant: 'section.feature' }}>
       <Container>
         <SectionHeader
           slogan="Quality features"
@@ -64,7 +58,7 @@ export default function Feature() {
           ))}
         </Grid>
       </Container>
-    </section>
+    </Box>
   );
 }
 

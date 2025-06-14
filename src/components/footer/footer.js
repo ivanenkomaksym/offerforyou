@@ -1,10 +1,29 @@
-/** @jsx jsx */
-import { jsx, Box, Grid, Container, Image, Heading, Text } from 'theme-ui';
+import { Box, Container, Text, Link } from 'theme-ui';
+import { FaInstagram, FaLinkedin } from 'react-icons/fa';
+
+const social = [
+  {
+    path: 'https://www.linkedin.com/company/offer-for-you/',
+    icon: <FaLinkedin />,
+  },
+  {
+    path: 'https://www.instagram.com/offerforyou33?igsh=MTh3cXB4aDNrb3M2eA==',
+    icon: <FaInstagram />
+  }
+];
+
 export default function Footer() {
   return (
     <footer sx={styles.footer}>
       <Container>
         <Box sx={styles.footer.footerBottomArea}>
+          <Box sx={styles.social}>
+            {social.map(({ path, icon }, i) => (
+              <Box as="span" key={i} sx={styles.social.icon}>
+                <Link href={path}>{icon}</Link>
+              </Box>
+            ))}
+          </Box>
           <Text sx={styles.footer.copyright}>
             Copyright by {new Date().getFullYear()} Offer For You
           </Text>
@@ -87,4 +106,28 @@ const styles = {
       },
     },
   },
+
+  social: {
+    width: '100%',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    icon: {
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      color: 'text',
+      fontSize: 32,
+      mr: '15px',
+      transition: 'all 0.25s',
+      cursor: 'pointer',
+      ':last-child': {
+        mr: '0',
+      },
+      '&:hover': {
+        color: 'secondary',
+      },
+    }
+  }
 };

@@ -1,5 +1,5 @@
-/** @jsx jsx */
-import { jsx, Image, Box, Heading, Text } from 'theme-ui';
+import { Box, Heading, Text } from 'theme-ui';
+import Image from 'next/image';
 
 export default function FeatureCardColumn({
   src,
@@ -9,7 +9,7 @@ export default function FeatureCardColumn({
 }) {
   return (
     <Box sx={styles.card}>
-      <Image src={src} alt={altText} sx={styles.img} />
+      <Image src={src} alt={altText} sx={styles.img} width={50} height={50}/>
 
       <Box sx={styles.wrapper}>
         <Heading sx={styles.wrapper.title}>{title}</Heading>
@@ -40,7 +40,7 @@ const styles = {
     flexDirection: 'column',
     title: {
       fontSize: 3,
-      color: 'heading_secondary',
+      color: 'text',
       lineHeight: 1.4,
       fontWeight: 700,
       mb: [2, null, 3],

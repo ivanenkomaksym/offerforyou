@@ -1,13 +1,11 @@
-/** @jsx jsx */
-import { jsx } from 'theme-ui';
 import { Container, Box } from 'theme-ui';
 import SectionHeader from 'components/section-header';
 import PostCard from 'components/post-card.js';
 import ButtonGroup from 'components/button-group';
 import Carousel from 'react-multi-carousel';
-import PostThumb1 from 'assets/blog/1.jpg';
-import PostThumb2 from 'assets/blog/2.jpg';
-import PostThumb3 from 'assets/blog/3.jpg';
+import PostThumb1 from '/assets/blog/1.jpg';
+import PostThumb2 from '/assets/blog/2.jpg';
+import PostThumb3 from '/assets/blog/3.jpg';
 
 const data = [
   {
@@ -73,7 +71,7 @@ const responsive = {
 
 export default function BlogSection() {
   return (
-    <section sx={{ variant: 'section.news' }}>
+    <Box as='section' sx={{ variant: 'section.news' }}>
       <Container>
         <SectionHeader
           slogan="our blog"
@@ -117,7 +115,7 @@ export default function BlogSection() {
           </Carousel>
         </Box>
       </Container>
-    </section>
+    </Box>
   );
 }
 
