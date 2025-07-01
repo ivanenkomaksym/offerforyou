@@ -8,11 +8,11 @@ import TeamSection from 'sections/team-section';
 import TestimonialCard from 'sections/testimonial';
 import WorkFlow from 'sections/workflow';
 import theme from 'theme';
-import { ThemeProvider } from 'theme-ui';
+import { ThemeUIProvider } from 'theme-ui';
 
 export default function IndexPage() {
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeUIProvider theme={theme}>
       <StickyProvider>
         <Layout>
           <SEO title="Offer For You Career Consulting" />
@@ -24,6 +24,6 @@ export default function IndexPage() {
           <TestimonialCard />
         </Layout>
       </StickyProvider>
-    </ThemeProvider>
+    </ThemeUIProvider>
   );
 }
