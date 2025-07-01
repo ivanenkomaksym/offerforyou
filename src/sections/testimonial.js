@@ -8,40 +8,27 @@ import Image from 'next/image'
 const data = [
   {
     id: 1,
-    title: 'Oфер через мiсяць спiвпрацi',
-    name: 'Влад',
+    name: 'Marina Sitnikova',
+    designation: 'AQA Engineer | General QA | Manual QA',
     review: 5,
-    screenshot: '/assets/testimonial/vlad.png'
+    avatar: '/assets/testimonial/Marina_Sitnikova.jpg',
+    description: "I was very happy to work with Anastasia and her team. My search was difficult and quite long, but the result is there. I want to express my gratitude to her and her team for their support, motivation, desire to always help, listen and give valuable recommendations that really help in the search."
   },
   {
     id: 2,
-    title: 'Отримав 2 запрошення на iнтерв`ю з самого початку роботи з нами!',
-    name: 'Кирило',
+    name: 'Michael Martsynovskyi',
+    designation: 'Senior Flutter Developer & Tech Lead | Fintech',
     review: 5,
-    screenshot: '/assets/testimonial/kyrylo.png'
+    avatar: '/assets/testimonial/Michael_Martsynovskyi.jpg',
+    description: "Huge thanks to Anastasiia and her team for their exceptional career coaching and employment support! I had a fantastic experience working with them and found their support invaluable in unlocking my potential. Their professionalism and dedication truly stand out. Highly recommend!"
   },
   {
     id: 3,
-    title: 'Офер після допомоги з резюме та LinkedIn',
-    name: 'Олена',
+    name: 'Kateryna Diatchuk',
+    designation: 'HR Generalist',
     review: 5,
-    screenshot: '/assets/testimonial/olena.png',
-  },
-  {
-    id: 4,
-    title: 'Офер після консультацій та допомоги з резюме',
-    avatar: 'Ірина',
-    name: 'Ірина',
-    review: 5,
-    screenshot: '/assets/testimonial/iryna.png',
-  },
-  {
-    id: 5,
-    title: 'Успішний досвід в Німеччині',
-    avatar: 'Микита',
-    name: 'Микита',
-    review: 5,
-    screenshot: '/assets/testimonial/mykyta.png',
+    avatar: '/assets/testimonial/Kateryna_Diatchuk.jpg',
+    description: "Завдяки допомозі Анастасії та. Таїсії дуже швидко вдалось отримати оффер. Дуже чітка та професійна комунікація, доречні зауваження щодо резюме та профілю, а саме головне - рекомендації, які спрацювали у моєму випадку. Дуже вдячна за допомогу!"
   },
 ];
 
@@ -104,10 +91,10 @@ export default function TestimonialCard() {
                 {item.title}
               </Heading>
               <Text sx={styles.description}>{item.description}</Text>
-              <div className="image">
-                <Image src={item.screenshot} alt="Testimonial" layout="responsive" width={250} height={150}/>
-              </div>
               <div className="card-footer">
+                <div className="image">
+                  <Image src={item.avatar} alt="Client Image" width={100} height={100}/>
+                </div>
                 <div className="reviewer-info">
                   <Heading as="h4" sx={styles.heading}>
                     {item.name}
@@ -204,16 +191,12 @@ const styles = {
         flexShrink: 0,
         mr: [3, null, null, 4],
         display: 'flex',
-        maxWidth: '100%',       // never exceed container width
-        overflow: 'hidden',
-      },
-
-      '.image img': {
-        width: '100%',          // fill container width
-        height: 'auto',         // scale height proportionally
-        display: 'block',       // remove bottom gap
-        borderRadius: '50%',    // if you want circular images like avatars
-        objectFit: 'contain',   // keep entire image visible without cropping
+        img: {
+          width: '55px',
+          height: '55px',
+          borderRadius: '50%',
+          objectFit: 'cover',
+        },
       },
     },
   },
