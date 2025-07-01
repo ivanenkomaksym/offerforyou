@@ -24,12 +24,44 @@ const data = [
   },
   {
     id: 3,
+    name: 'Anton Bukin',
+    designation: 'Head of IT Sales | Sales Consulting | Head of Retention',
+    review: 5,
+    avatar: '/assets/testimonial/Anton_Bukin.jpg',
+    description: "Вже давно стежу за результатами роботи Анастасії та неодноразово звертався до спеціалістів з питань розвитку кар’єри. Після ретельного вибору вирішив співпрацювати саме з Анастасією. Під час нашої роботи отримав якісний зворотний зв'язок, цікаві інсайти та рекомендації щодо позиціювання себе та своїх послуг на ринку."
+  },
+  {
+    id: 4,
     name: 'Kateryna Diatchuk',
     designation: 'HR Generalist',
     review: 5,
     avatar: '/assets/testimonial/Kateryna_Diatchuk.jpg',
     description: "Завдяки допомозі Анастасії та. Таїсії дуже швидко вдалось отримати оффер. Дуже чітка та професійна комунікація, доречні зауваження щодо резюме та профілю, а саме головне - рекомендації, які спрацювали у моєму випадку. Дуже вдячна за допомогу!"
   },
+  {
+    id: 5,
+    name: 'Yuliia Psurtseva',
+    designation: 'QA Lead | Senior QA Engineer | Quality Assurance Specialist',
+    review: 5,
+    avatar: '/assets/testimonial/Yuliia_Psurtseva.jpg',
+    description: "Hi. It was a pleasure to cooperate with Anastasiia. Her mentoring skills are excellent. She provided a lot of information to me about how to better design a LinkedIn profile, how to work on improving your visibility for your network, and how to work with the network in general. Our work was clear and structured, and it went according to the planned schedule. As a result, I found a job in a short time during the holidays. I recommend working with Anastasia"
+  },
+  {
+    id: 6,
+    name: 'Iryna Myroniuk',
+    designation: 'Customer Success Manager | Operations Manager',
+    review: 5,
+    avatar: '/assets/testimonial/Iryna_Myroniuk.jpg',
+    description: "Я мала можливість отримати консультацію від Анастасії, і це стало одним з найцінніших етапів у моєму професійному розвитку. Її глибокі знання ринку праці, індивідуальний підхід та вміння ставити правильні запитання допомогли мені чітко визначити мої сильні сторони, знайти нові можливості та створити план дій для подальшого професійного росту. Анастасія – не просто кар'єрна радниця, а справжня наставниця, яка вміє надихнути на впевнені кроки вперед."
+  },
+  {
+    id: 7,
+    name: 'Anna Pshenychna',
+    designation: 'Project Manager | Administrator | Event Coordinator',
+    review: 5,
+    avatar: '/assets/testimonial/Anna_Pshenychna.jpg',
+    description: "Рекомендую Anastasiia, як професійного кар'єрного консультанта. Чудово веде супровід клієнтів. Завжди підлаштовується під потреби та адаптується під запит клієнта. має чіткий структурований план роботи, при цьому завжди вчасно реагує та підлаштовується під поточні зміни у ході роботи."
+  }
 ];
 
 const responsive = {
