@@ -37,9 +37,9 @@ const data = [
   },
 ];
 
-export default function KeyFeature() {
+export default function Services() {
   return (
-    <Box as='section' sx={{ variant: 'section.keyFeature' }} id="feature">
+    <Box as='section' sx={{ variant: 'section.keyFeature' }} id="services">
       <Container>
         <SectionHeader
           title="Наші послуги"

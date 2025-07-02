@@ -87,7 +87,7 @@ const responsive = {
   },
 };
 
-export default function TestimonialCard() {
+export default function Testimonial() {
   return (
     <Box as='section' id="testimonial" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>

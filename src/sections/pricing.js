@@ -250,7 +250,7 @@ const responsive = {
   },
 };
 
-export default function Package() {
+export default function Pricing() {
   const { monthly, annual } = packages;
   const [state, setState] = useState({
     active: 'monthly',

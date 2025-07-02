@@ -100,7 +100,7 @@ const styles = {
       justifyContent: 'center',
       textAlign: 'center',
       display: 'inline-flex',
-      mb: [0, null, -6, null, null, '-40px', null, -3],
+      mb: [0, null, -6, null, null, '40px', null, -3],
       img: {
         position: 'relative',
         height: [245, 'auto'],

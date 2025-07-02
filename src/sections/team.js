@@ -66,9 +66,9 @@ const data = [
   }
 ];
 
-export default function TeamSection() {
+export default function Team() {
   return (
-    <section>
+    <section id="team">
       <Container>
         <SectionHeader
           slogan="Наша команда"

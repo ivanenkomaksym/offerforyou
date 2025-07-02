@@ -30,7 +30,7 @@ const data = [
 
 export default function WorkFlow() {
   return (
-    <Box as="section" sx={styles.workflow}>
+    <Box as="section" sx={styles.workflow} id="workflow">
       <Container>
         <SectionHeader
           title="Як це працює"
