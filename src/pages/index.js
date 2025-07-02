@@ -15,7 +15,7 @@ export default function IndexPage() {
     <ThemeUIProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Offer For You Career Consulting" />
+          <SEO/>
           <Banner />
           <Services />
           <WorkFlow />
