@@ -4,7 +4,7 @@ export default [
     label: 'Головна',
   },
   {
-    path: 'feature',
+    path: 'services',
     label: 'Послуги',
   },
   {
