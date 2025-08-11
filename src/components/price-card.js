@@ -11,6 +11,7 @@ export default function PriceCard({
     buttonText = 'Замовити',
     anotherOption,
     points,
+    duration
   },
 }) {
   return (
@@ -25,6 +26,11 @@ export default function PriceCard({
             {name}
           </Heading>
           <Text as="p">{description}</Text>
+          {duration && (
+            <Text>
+              ⏱ {duration}
+            </Text>
+          )}
         </Box>
         <List items={points} childStyle={styles.listItem} />
         <Text className="package__price" sx={styles.price}>
