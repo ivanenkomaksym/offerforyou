@@ -49,7 +49,7 @@ const packages = {
       header: 'Medium',
       name: 'Резюме + LinkedIn',
       description: 'Для тих, хто хоче повністю оновити свою кар’єрну візитівку і правильно “зайти” на ринок',
-      priceWithUnit: '$170',
+      priceWithUnit: '$200',
       buttonText: 'Замовити',
       points: [
         {
