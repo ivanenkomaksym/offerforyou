@@ -15,12 +15,7 @@ const packages = {
       name: 'Разова консультація',
       description: 'Для тих, хто хоче збільшити кількість відгуків та отримати більше оферів',
       buttonText: 'Замовити',
-      priceWithUnit: (
-        <span>
-          <span style={{ textDecoration: 'line-through', color: '#999', marginRight: '8px' }}>$75</span>
-          <span style={{ fontSize: '1.1em', fontWeight: '600' }}>$69</span>
-        </span>
-      ),
+      priceWithUnit: '$75',
       duration: '60 хвилин',
       points: [
         {
@@ -53,13 +48,8 @@ const packages = {
       id: 2,
       header: 'Medium',
       name: 'Резюме + LinkedIn',
-      description: 'Для тих, хто хоче повністю оновити свою кар\'єрну візитівку і правильно "зайти" на ринок',
-      priceWithUnit: (
-        <span>
-          <span style={{ textDecoration: 'line-through', color: '#999', marginRight: '8px' }}>$200</span>
-          <span style={{ fontSize: '1.1em', fontWeight: '600' }}>$119</span>
-        </span>
-      ),
+      description: 'Для тих, хто хоче повністю оновити свою кар’єрну візитівку і правильно “зайти” на ринок',
+      priceWithUnit: '$200',
       buttonText: 'Замовити',
       points: [
         {
@@ -100,19 +90,14 @@ const packages = {
       headerIcon: <IoIosCheckmarkCircle />,
       name: 'Full на місяць',
       description: 'Максимальний пакет для тих, хто хоче отримати офер швидко та без стресу',
-      priceWithUnit: (
-        <span>
-          <span style={{ textDecoration: 'line-through', color: '#999', marginRight: '8px' }}>$800</span>
-          <span style={{ fontSize: '1.1em', fontWeight: '600' }}>$399</span>
-        </span>
-      ),
+      priceWithUnit: '$800',
       duration: '1 місяць (з дати першої консультації)',
       buttonText: 'Замовити',
       points: [
         {
           id: 1,
           icon: <IoIosCheckmarkCircle />,
-          text: '5 індивідуальних консультацій (резюме, LinkedIn, підготовка до співбесід, кар\'єрний психолог, технічний фахівець)',
+          text: '5 індивідуальних консультацій (резюме, LinkedIn, підготовка до співбесід, кар’єрний психолог, технічний фахівець)',
           isAvailable: true,
         },
         {
