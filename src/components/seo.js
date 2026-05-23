@@ -15,9 +15,9 @@ export default function SEO({
   const publicSiteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://offerforyou.net"; // Fallback to hardcoded if env var is missing
   const currentUrl = publicSiteUrl + router.asPath;
 
-  const defaultTitle = 'Кар\'єрний супровід, оновлення резюме та LinkedIn, підготовка до співбесід';
+  const defaultTitle = 'Кар\'єрний супровід, кар\'єрна консультація, центр кар\'єри, коучинг, оновлення резюме, оновлення LinkedIn, підготовка до співбесід';
   const defaultDescription = 'Оновлення резюме відповідно до вимог ринку. Формування мети пошуку та адаптація досвіду під неї. Повне оформлення LinkedIn профілю. Консультації та підготовка до співбесід. Щотижневий підбір вакансій відповідно до вашого досвіду, підготовка до співбесід та психологічна підтримка. Перелік курсів, книжок та ресурсів для навчання.';
-  const defaultKeywords = ['підготовка до співбесід', 'підбір вакансій', 'оновлення резюме', 'перевірка резюме', 'оновлення LinkedIn', 'оновлення лінкедін', 'Україна'];
+  const defaultKeywords = ['підготовка до співбесід', 'підбір вакансій', 'оновлення резюме', 'перевірка резюме', 'оновлення LinkedIn', 'оновлення лінкедін', 'Україна', 'кар\'єрна консультація']
   const defaultOgImage = `${publicSiteUrl}/assets/offer_for_you_logo.png`; // A default social sharing image
 
   const finalTitle = title || defaultTitle;
